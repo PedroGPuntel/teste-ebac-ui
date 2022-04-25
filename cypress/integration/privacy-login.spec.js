@@ -7,10 +7,13 @@ context('Funcionalidade teste', () =>{
         cy.get('#email').type('pedro.guedes@privacytools.com.br')
         cy.get('#password').type('4+fy+260R.}>z1XA')
         cy.get('.btn').click()
-        cy.get('#pin').type('059400')
+        cy.get('#pin').type('706609')
         cy.get('.form-validate > :nth-child(4)').click()   
         
         cy.get('[href="#webtools"]').click()
+        cy.get('#webtools > :nth-child(1) > a').click()
+        cy.get('#website').select('Website Privacy Tools - www.privacytools.com.br')
+        cy.get('.col-sm-4 > .btn').click()
 
     })
    
