@@ -7,7 +7,7 @@ context('Funcionalidade teste', () =>{
         cy.get('#email').type('pedro.guedes@privacytools.com.br')
         cy.get('#password').type('4+fy+260R.}>z1XA')
         cy.get('.btn').click()
-        cy.get('#pin').type('706609')
+        cy.get('#pin').type('765730')
         cy.get('.form-validate > :nth-child(4)').click()   
         
         cy.get('[href="#webtools"]').click()
